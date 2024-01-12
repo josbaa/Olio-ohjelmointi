@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olio ohjelmoinnin eka tunti", "Olio ohjelmoinnin eka tunti\Olio ohjelmoinnin eka tunti.csproj", "{D989203B-6764-4E78-AADA-C37D5119BB83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookExercise", "BookExercise\BookExercise.csproj", "{57135259-551D-454F-A392-043F8F074CAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D989203B-6764-4E78-AADA-C37D5119BB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D989203B-6764-4E78-AADA-C37D5119BB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D989203B-6764-4E78-AADA-C37D5119BB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57135259-551D-454F-A392-043F8F074CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57135259-551D-454F-A392-043F8F074CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57135259-551D-454F-A392-043F8F074CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57135259-551D-454F-A392-043F8F074CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
