@@ -50,8 +50,6 @@ namespace CarExercise
                 this.speed += value;
                 Console.WriteLine($"Auton (this.brand) uusi nopeus on (this.speed)");
             }
-
-
         }
 
         internal void Brake()

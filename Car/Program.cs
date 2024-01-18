@@ -9,8 +9,6 @@ namespace CarExercise
 {
     internal class Program
     {
-        
-
         private static void Main(string[] args)
         {
             Car car1 = new Car();
@@ -22,5 +20,4 @@ namespace CarExercise
             car1.Brake();
         }
     }
-
 }
