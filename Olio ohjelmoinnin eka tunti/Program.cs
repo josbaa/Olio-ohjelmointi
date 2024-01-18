@@ -35,7 +35,5 @@ namespace Olio_ohjelmoinnin_eka_tunti
         }
     }
 
-    internal class Book1
-    {
-    }
+    
 }

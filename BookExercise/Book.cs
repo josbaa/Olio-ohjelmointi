@@ -44,6 +44,16 @@ namespace BookExercise
         {
             Console.WriteLine("Ensimmäinen kirja maksaa " + this.price);
             Console.WriteLine("Toinen kirja maksaa " + otherBook.price);
+
+            if(this.price > otherBook.price)
+            {
+                Console.WriteLine(this.title + "on kalliimpi kuin" + otherBook.title);
+            }
+            else if(this.price == otherBook.price)
+            {
+                Console.WriteLine(this.title + " on saman hintainen kuin" + otherBook.title);
+            }
+           
         }
 
 
