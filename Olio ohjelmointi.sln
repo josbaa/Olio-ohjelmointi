@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarExercise", "Car\CarExerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyExercise1", "CompanyExercise1\CompanyExercise1.csproj", "{0FA9C7C8-17A0-4FEC-B981-01E19461EBAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExercise", "..\..\..\OneDrive - LUT University\Ohjelmoinnin perusteet\EmployeeExercise\EmployeeExercise.csproj", "{43E2E109-D6C0-4501-A293-40324F55772C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatExercise", "..\..\..\OneDrive - LUT University\Ohjelmoinnin perusteet\EmployeeExercise\CatExercise.csproj", "{43E2E109-D6C0-4501-A293-40324F55772C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
