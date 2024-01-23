@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyExercise1", "Company
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatExercise", "..\..\..\OneDrive - LUT University\Ohjelmoinnin perusteet\EmployeeExercise\CatExercise.csproj", "{43E2E109-D6C0-4501-A293-40324F55772C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExercise", "EmployeeExercise\EmployeeExercise.csproj", "{283BB460-093B-481F-9B0B-4E41BE80CA61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{43E2E109-D6C0-4501-A293-40324F55772C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E2E109-D6C0-4501-A293-40324F55772C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E2E109-D6C0-4501-A293-40324F55772C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283BB460-093B-481F-9B0B-4E41BE80CA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283BB460-093B-481F-9B0B-4E41BE80CA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283BB460-093B-481F-9B0B-4E41BE80CA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283BB460-093B-481F-9B0B-4E41BE80CA61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
