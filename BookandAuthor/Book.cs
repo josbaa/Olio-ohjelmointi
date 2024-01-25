@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -10,8 +12,12 @@ namespace BookandAuthor
     internal class Book
     {
         private string name;
-        public int id;
+        private string author;
+        private int id;
         private string isbn;
+        private double price;
+        public string publisher;
+
 
         public static string theme = "Oppikirjat";
         public static int NextId = 1; //alkuarvo
@@ -37,8 +43,6 @@ namespace BookandAuthor
             }
         }
 
-        public string Id { get => isbn; set => isbn = value; }
-
         public string Isbn 
         {
             get => isbn;
@@ -47,6 +51,23 @@ namespace BookandAuthor
                 if (value.StartsWith(PREFIX) && value.Length == MAXLENGHT) 
                 {
                     isbn = value;
+                }
+            }
+        }
+
+        public string Author { get => author; set => author = value; }
+        public double Price
+        {
+            get => price;
+            set
+            {
+                if (value > 30)
+                {
+                    price = 0.9 * value;
+                }
+                else
+                {
+                    price = value;
                 }
             }
         }
@@ -76,10 +97,35 @@ namespace BookandAuthor
         {
             return this.Name; 
         }
+        public void GetBookDetails(string isbnValue)
+        {
+            //Console.Writeline(isbnValue);
+            if (this.isbn == isbnValue)
+            {
+                //tulosta kirjan tiedot
+                Console.WriteLine(this.ToString());
+            }
+            else
+            {
+                Console.WriteLine("Kirjan tietoja ei voi tulostaa");
+            }
+        }
 
         public Book(string name)
         {
             this.Name = name;
+            this.id = NextId;
+            NextId++;
+        }
+
+        public Book(string name, string author, string isbn, double price, string publisher)
+        {
+            this.isbn = isbn;
+            this.Price = price;
+            this.publisher = publisher;
+            this.name = name;
+            this.author = author;
+
             this.id = NextId;
             NextId++;
         }

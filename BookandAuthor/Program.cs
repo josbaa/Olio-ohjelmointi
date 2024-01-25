@@ -30,6 +30,8 @@ namespace BookandAuthor
             Console.WriteLine(testBook1);
             Console.WriteLine(testBook2);
 
+            Author author1 = new Author("Author.Lindgren", "1.1.1950", testBook1);
+
 
             Console.ReadLine();
         }
