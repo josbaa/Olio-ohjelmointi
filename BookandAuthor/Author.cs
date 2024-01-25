@@ -33,5 +33,15 @@ namespace BookandAuthor
             this.Birthday = birthday;
             this.Book = book;
         }
+        public void PrintInformation()
+        {
+            Console.WriteLine(this.ToString());
+        }
+
+        public override string ToString()
+        {
+            return $"{this.Name}, {this.birthday}, kirja:{this.Book}$";
+
+        }
     }
 }

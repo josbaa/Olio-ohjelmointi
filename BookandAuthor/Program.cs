@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Literature;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace BookandAuthor
     {
         static void Main(string[] args)
         {
-            Book testBook1 = new Book();
-            testBook1 = new Book();
+            Console.WriteLine("Hello world");
+            Book testBook1 = new Book("Peppi Pitkätossu", "Astrid Lindgren", "9782221113333", 35, "WSOY");
             //testBook1.Setname("Aapinen");
             testBook1.Name = "Aapinen";
             Console.WriteLine(testBook1);
@@ -30,7 +31,7 @@ namespace BookandAuthor
             Console.WriteLine(testBook1);
             Console.WriteLine(testBook2);
 
-            Author author1 = new Author("Author.Lindgren", "1.1.1950", testBook1);
+            Author author1 = new Author("Astrid.Lindgren", "1.1.1950", testBook1);
 
 
             Console.ReadLine();

@@ -7,7 +7,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookandAuthor
+namespace Literature //BookandAuthor
 {
     internal class Book
     {
@@ -55,7 +55,8 @@ namespace BookandAuthor
             }
         }
 
-        public string Author { get => author; set => author = value; }
+        public string Author { 
+            get => author; set => author = value; }
         public double Price
         {
             get => price;
@@ -86,7 +87,6 @@ namespace BookandAuthor
             this.id = NextId;
             NextId++;
         }
-
 
         public void Setname(string value)
         {
@@ -132,7 +132,7 @@ namespace BookandAuthor
 
         public override string ToString()
         {
-            return $"{this.id}: Kirjan nimi:{this.Name}; teema:{theme}";
+            return $"{this.id}. {this.name}.{this.isbn}.{this.publisher}. {this.Author}: Kirjan nimi: Mauri.Kunnas {this.price}, teema: {theme}";
         }
     }
 }
