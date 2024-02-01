@@ -35,7 +35,7 @@ namespace VehicleExercise
 
 
             Person p1 = new Person("Mikko Mallikas");
-            Employee eTest = p1 as Employee;
+            Employee? eTest = p1 as Employee;
             Console.WriteLine("onnistuuko eTest tulostus: " + eTest?.ToString());
 
             Person e1Test = e1 as Person;
