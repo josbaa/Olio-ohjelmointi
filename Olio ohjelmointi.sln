@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExercise", "Employe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookandAuthor", "BookandAuthor\BookandAuthor.csproj", "{42E978F7-401E-4A2B-904A-E0A7CF6E32E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleExersise", "VehicleExersise\VehicleExersise.csproj", "{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{42E978F7-401E-4A2B-904A-E0A7CF6E32E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E978F7-401E-4A2B-904A-E0A7CF6E32E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E978F7-401E-4A2B-904A-E0A7CF6E32E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
