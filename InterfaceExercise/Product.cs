@@ -26,6 +26,7 @@ namespace InterfaceExercise
             this.count = count;
         }
 
+
         public double CalculateTotal()
         {
             return this.price * this.count;

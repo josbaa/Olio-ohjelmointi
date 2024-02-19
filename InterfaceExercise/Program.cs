@@ -37,4 +37,8 @@ foreach (Product product in list)
         if (customer.GetCustomer("Asiakas1") != null) { Console.WriteLine("Found customer" + customer.name); }
         Console.WriteLine(customer);
     }
+
+    Store s = new Store();
+    s.AddProduct(new Product("kivi", 1.0, 100));
+    s.AddProduct(new Product("naula", 2.0, 200));
 }

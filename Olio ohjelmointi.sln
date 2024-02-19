@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookandAuthor", "BookandAut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleExersise", "VehicleExersise\VehicleExersise.csproj", "{887B18EE-C125-4D9D-8E37-44A8AFCBB59D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceExercise", "InterfaceExercise\InterfaceExercise.csproj", "{B5B5A8B8-53A1-43FB-A893-29CF77A22B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExercise", "InterfaceExercise\InterfaceExercise.csproj", "{B5B5A8B8-53A1-43FB-A893-29CF77A22B31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeExercise", "ShapeExercise1\ShapeExercise.csproj", "{306912E7-8769-4730-A62F-6C17471ED619}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{B5B5A8B8-53A1-43FB-A893-29CF77A22B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5B5A8B8-53A1-43FB-A893-29CF77A22B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5B5A8B8-53A1-43FB-A893-29CF77A22B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306912E7-8769-4730-A62F-6C17471ED619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306912E7-8769-4730-A62F-6C17471ED619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306912E7-8769-4730-A62F-6C17471ED619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306912E7-8769-4730-A62F-6C17471ED619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

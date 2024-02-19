@@ -18,6 +18,7 @@ namespace InterfaceExercise
             this.purchases = purchases;
         }
 
+
         public int GetBonus()
         {
             if (this.purchases > 0 && this.purchases < 1000) { return 2; }
