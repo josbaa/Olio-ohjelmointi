@@ -19,7 +19,7 @@ namespace CarExercise
 
         public void AskData()
         {
-            Console.Write("Auton merkki");
+            Console.Write("Auton merkki:");
             this.brand = Console.ReadLine();
 
             //Console.Write("Auton nopeus");
@@ -48,7 +48,7 @@ namespace CarExercise
             else
             {
                 this.speed += value;
-                Console.WriteLine($"Auton (this.brand) uusi nopeus on (this.speed)");
+                Console.WriteLine($"Auton + (this.brand) uusi nopeus on (this.speed)");
             }
         }
 
