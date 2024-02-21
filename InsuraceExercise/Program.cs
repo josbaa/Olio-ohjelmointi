@@ -1,17 +1,17 @@
 ﻿using System;
 
-public class Ohjelma
+public class Program
 {
     public static void Main(string[] args)
     {
-        VakuutusManageri vm = new VakuutusManageri();
-        vm.LisaaVakuutus("koira", "Rolle", false);
-        vm.LisaaVakuutus("koira", "Tessu", true);
-        vm.LisaaVakuutus("kissa", "Monni", true);
-        vm.LisaaVakuutus("koira", "Pluto", false);
-        vm.LisaaVakuutus("lintu", "Tipi", false);
-        vm.TulostaVakuutukset();
+        InsuranceManager vm = new InsuranceManager();
+        vm.AddInsurance("Dog", "Rolle", false);
+        vm.AddInsurance("Dog", "Tessu", true);
+        vm.AddInsurance("Dog", "Monni", true);
+        vm.AddInsurance("Dog", "Pluto", false);
+        vm.AddInsurance("Bird", "Tipi", false);
+        vm.PrintInsurances();
         Console.WriteLine("---");
-        vm.EtsiVakuutukset("koira", false);
+        vm.FindInsurances("Dog", false);
     }
 }

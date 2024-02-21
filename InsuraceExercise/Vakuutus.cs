@@ -4,37 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-   
-    public class Vakuutus
+public class PetInsurance
+{
+    public string Species { get; private set; }
+    private string Name;
+    public bool IsNeutered { get; private set; }
+    private double Premium;
+
+    public PetInsurance(string species, string name, bool isNeutered, double premium)
     {
-        public string laji;
-        private string nimi;
-        public bool leikattu;
-        private double maksu;
+        this.Species = species;
+        this.Name = name;
+        this.IsNeutered = isNeutered;
+        this.Premium = premium;
+    }
 
-        public Vakuutus(string elain, string nimi, bool onLeikattu, double maksu)
+    public string GetNeuteringStatus()
+    {
+        if (IsNeutered)
         {
-            this.laji = elain;
-            this.nimi = nimi;
-            this.leikattu = onLeikattu;
-            this.maksu = maksu;
+            return "neutered";
         }
-
-        public string HaeLeikattuTieto()
+        else
         {
-            if (leikattu)
-            {
-                return "leikattu";
-            }
-            else
-            {
-                return "leikkaamaton";
-            }
-        }
-
-        public override string ToString()
-        {
-            return this.laji + ": " + this.nimi + ", " + this.HaeLeikattuTieto() + ", vakuutusmaksu " + this.maksu + " e";
+            return "not neutered";
         }
     }
 
+    public override string ToString()
+    {
+        return $"{this.Species}: {this.Name}, {this.GetNeuteringStatus()}, insurance premium {this.Premium} e";
+    }
+}

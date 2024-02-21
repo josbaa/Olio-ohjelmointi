@@ -1,43 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class VakuutusManageri
+public class InsuranceManager
 {
-    private List<Vakuutus> vakuutukset;
+    private List<PetInsurance> Insurance;
 
-    public VakuutusManageri()
+    public InsuranceManager()
     {
-        this.vakuutukset = new List<Vakuutus>();
+        this.Insurance = new List<PetInsurance>();
     }
 
-    public void LisaaVakuutus(string elain, string nimi, bool onLeikattu)
+    public void AddInsurance(string animal, string name, bool neutred)
     {
-        double maksu = HaeMaksu(elain, onLeikattu);
-        Vakuutus uusiVakuutus = new Vakuutus(elain, nimi, onLeikattu, maksu);
-        vakuutukset.Add(uusiVakuutus);
+        double payment = ApplyPayment(animal, neutred);
+        PetInsurance newInsurance = new PetInsurance(animal, name, neutred, payment);
+        Insurance.Add(newInsurance);
     }
 
-    private double HaeMaksu(string laji, bool onLeikattu)
+    private double ApplyPayment(string species, bool Neutred)
     {
-        switch (laji)
+        switch (species)
         {
-            case "koira":
-                return onLeikattu ? 50 : 80;
-            case "kissa":
-                return onLeikattu ? 40 : 60;
+            case "Dog":
+                return Neutred ? 50 : 80;
+            case "Cat":
+                return Neutred ? 40 : 60;
             default:
                 return 0;
         }
     }
 
-    public void TulostaVakuutukset()
+    public void PrintInsurances()
     {
-        vakuutukset.ForEach(vakuutus => Console.WriteLine(vakuutus.ToString()));
+        Insurance.ForEach(Insurance => Console.WriteLine(Insurance.ToString()));
     }
 
-    public void EtsiVakuutukset(string laji, bool onLeikattu)
+    public void FindInsurances(string species, bool Neutred)
     {
-        List<Vakuutus> sopivatVakuutukset = vakuutukset.FindAll(vakuutus => vakuutus.laji == laji && vakuutus.leikattu == onLeikattu);
-        sopivatVakuutukset.ForEach(vakuutus => Console.WriteLine(vakuutus.ToString()));
+        List<PetInsurance> suitableInsurances = Insurance.FindAll(Insurance => Insurance.Species == species && Insurance.IsNeutered == Neutred);
+        suitableInsurances.ForEach(Insurance => Console.WriteLine(Insurance.ToString()));
     }
 }
