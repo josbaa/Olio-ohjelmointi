@@ -6,17 +6,32 @@ using System.Threading.Tasks;
 
 namespace ShapeExercise
 {
-    internal class Triangle : Shape
+    class Triangle : Shape
     {
-        public Triangle()
+        double a;
+        double b;
+        double c;
+
+        // Konstruktori
+        public Triangle(double sideA, double sideB, double sideC)
         {
+            a = sideA;
+            b = sideB;
+            c = sideC;
         }
 
+        // Ylikirjoitettu GetArea-metodi
         public override double GetArea()
         {
-            throw new NotImplementedException();
+            double s = (a + b + c) / 2;
+            return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
         }
 
-        public override string GetInfo => throw new NotImplementedException();
+        // Ylikirjoitettu GetInfo-metodi
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Triangle with sides {a:F2}, {b:F2}, and {c:F2}, area is {GetArea():F2}");
+        }
     }
+
 }

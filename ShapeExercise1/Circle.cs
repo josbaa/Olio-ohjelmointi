@@ -6,44 +6,26 @@ using System.Threading.Tasks;
 
 namespace ShapeExercise
 {
-    internal class Circle : Shape
+    class Circle : Shape
     {
+        double radius;
 
-        private double radius;
-
-        public Circle (double radius)
+        // Konstruktori
+        public Circle(double r)
         {
-            this.radius = radius;
+            radius = r;
         }
 
-        public override string GetInfo =>
-            Console.WriteLine($"Circle with radius {this.radius}, Area: {GetArea()}");
-
+        // Ylikirjoitettu GetArea-metodi
         public override double GetArea()
         {
             return Math.PI * radius * radius;
         }
-        public override bool Equals(object? obj)
+
+        // Ylikirjoitettu GetInfo-metodi
+        public override void GetInfo()
         {
-            return base.Equals(obj);
-        }
-
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-
-   
-
-        public override string? ToString()
-        {
-            return base.ToString();
-        }
-
-        public override string GetInfo()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine($"Circle with radius {radius:F2}, area is {GetArea():F2}");
         }
     }
 }

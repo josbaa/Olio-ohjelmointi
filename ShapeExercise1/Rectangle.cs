@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace ShapeExercise
 {
-    internal class Rectangle : Shape
+    class Rectangle : Shape
     {
-        private double width;
-        private double height;
+        double length;
+        double width;
 
-
-        public Rectangle(double width, double height)
+        // Konstruktori
+        public Rectangle(double l, double w)
         {
-            this.width = width;
-            this.height = height;
+            length = l;
+            width = w;
         }
 
-        public override string GetInfo => Console.WriteLine($"Rectangle with width {width} and height {height}, Area: {GetArea()}");
-
+        // Ylikirjoitettu GetArea-metodi
         public override double GetArea()
         {
-            return width * height;
+            return length * width;
+        }
+
+        // Ylikirjoitettu GetInfo-metodi
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Rectangle with length {length:F2} and width {width:F2}, area is {GetArea():F2}");
         }
     }
 }

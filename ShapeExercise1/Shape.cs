@@ -6,9 +6,25 @@ using System.Threading.Tasks;
 
 namespace ShapeExercise
 {
-    abstract class Shape
+    abstract class Shape : IComparable<Shape>
     {
+        // Konstruktori
+        public Shape()
+        {
+        }
+
+        // Abstrakti GetArea-metodi
         public abstract double GetArea();
-        public abstract string GetInfo();
+
+        // Vertailu pinta-alan perusteella
+        public int CompareTo(Shape other)
+        {
+            if (other == null) return 1;
+            return this.GetArea().CompareTo(other.GetArea());
+        }
+
+        // Abstrakti GetInfo-metodi
+        public abstract void GetInfo();
     }
+
 }

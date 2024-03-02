@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using ShapeExercise;
 using System;
 using System.Collections.Generic;
@@ -9,39 +9,51 @@ using System.Threading.Tasks;
 
 namespace ShapeExercise
 {
-
-    internal class Program : Shape
+    class Program
     {
-        public Program()
+        static void Main(string[] args)
         {
+            // Luodaan heterogeeninen kokoelma
+            List<Shape> shapes = new List<Shape>();
+            shapes.Add(new Circle(3));
+            shapes.Add(new Rectangle(4, 5));
+            shapes.Add(new Triangle(3, 4, 5));
 
-        }
-
-        private static void Main(string[] args)
-        {
-            List<Shape> list = new List<Shape>();
-            Shape c1 = new Circle("Punainen", 3.2);
-            Shape c2 = new Triangle("Sininen", 3.6);
-            Shape c3 = new Rectangle("Keltainen", 11);
-
-            foreach (Shape s in list)
+            // Tulostetaan kokoelman sisältö
+            Console.WriteLine("Shapes:");
+            foreach (Shape shape in shapes)
             {
-
-                s.GetArea();
+                shape.GetInfo();
             }
-            Console.ReadLine();
-        }
 
-        public override double GetArea()
-        {
-            throw new NotImplementedException();
-        }
+            // Lajitellaan muodot pinta-alan mukaan ja tulostetaan uudelleen
+            Console.WriteLine("\nShapes after sorting by area:");
+            shapes.Sort();
+            foreach (Shape shape in shapes)
+            {
+                shape.GetInfo();
+            }
 
-        public override string GetInfo()
-        {
-            throw new NotImplementedException();
+            // Tulostetaan vain tietyn tyyppisten muotojen tiedot
+            Console.WriteLine("\nOnly Triangles:");
+            foreach (Shape shape in shapes)
+            {
+                if (shape.GetType() == typeof(Triangle))
+                {
+                    shape.GetInfo();
+                }
+            }
+
+            // Vertailu värin perusteella
+            Console.WriteLine("\nShapes sorted by color:");
+            shapes.Sort((x, y) => x.GetType().Name.CompareTo(y.GetType().Name));
+            foreach (Shape shape in shapes)
+            {
+                shape.GetInfo();
+            }
         }
     }
+   
 }
 
 
