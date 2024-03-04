@@ -22,40 +22,35 @@ namespace CarExercise
             Console.Write("Auton merkki:");
             this.brand = Console.ReadLine();
 
-            //Console.Write("Auton nopeus");
-            //string speedValue = Console.ReadLine();
-            //int.TryParse(Console.ReadLine(), out this.speed);
-
-            while (speed == 0)
-            {
-                Console.Write("Auton nopeus:");
-                int.TryParse(Console.ReadLine(), out this.speed);
-            }
+            Console.Write("Auton nopeus:");
+            int.TryParse(Console.ReadLine(), out this.speed);
         }
 
         public void ShowCarInfo()
         {
-
+            Console.WriteLine($"Auton merkki: {this.brand}");
+            Console.WriteLine($"Auton nopeus: {this.speed} km/h");
         }
 
-        public void Accelerate(int value)
-
+        public void Accelerate(int change)
         {
-            if (value < 0)
+            if (change < 0)
             {
-                //pyydä uusi arvo
+                Console.WriteLine("Negatiivinen muutos ei ole sallittu.");
+                return;
             }
-            else
-            {
-                this.speed += value;
-                Console.WriteLine($"Auton + (this.brand) uusi nopeus on (this.speed)");
-            }
+
+            this.speed += change;
+            Console.WriteLine($"Auton uusi nopeus: {this.speed} km/h");
         }
 
-        internal void Brake()
+        public void Brake()
         {
-            throw new NotImplementedException();
-        }
+            double decreasePercentage = 0.10; // 10% vähennys
+            int decreaseAmount = (int)(this.speed * decreasePercentage);
+            this.speed -= decreaseAmount;
 
+            Console.WriteLine($"Auton nopeus vähennetty 10%: {this.speed} km/h");
+        }
     }
 }

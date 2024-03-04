@@ -17,7 +17,10 @@ namespace CarExercise
 
             //Lisätään nopeutta
             car1.Accelerate(40);
+            car1.ShowCarInfo();
+
             car1.Brake();
+            car1.ShowCarInfo();
         }
     }
 }
