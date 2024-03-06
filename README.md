@@ -1,1 +1,1 @@
-Kokoelma Olio-ohjelmoinnin kurssilla tehdyistä tehtävistä.
+Kokoelma Olio-ohjelmoinnin perusteet kurssilla tehdyistä tehtävistä.
